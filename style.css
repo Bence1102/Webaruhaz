@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: cadetblue;
+    background-color: rgb(1, 41, 61);
 }
 main {
     width: 80%;
@@ -13,7 +13,7 @@ main {
 }
 
 article, aside, header, footer, nav {
-    border: 10px solid rgb(41, 14, 194);
+    border: 10px solid  rgb(41, 57, 82);
     padding: 10px;
 }
 
@@ -29,14 +29,22 @@ nav ul{
     grid-template-columns: 100px 100px 100px;
     gap: 10px;
     list-style: none;
+    
 }
 
 nav ul li{
-    border: 2px solid bisque;
-    border-radius: 5px;
+    border: 2px solid  rgb(41, 57, 82);
+    border-radius: 15px;
     padding: 10px;
     text-align: center;
-    background-color: rgb(233, 215, 116);
+    background-color:  rgb(41, 57, 82);
+    
+    
+}
+
+nav ul a{
+    text-decoration: none;
+    color: #fff;
 }
 
 main {
@@ -53,12 +61,13 @@ main {
 
 header{
     grid-area: h;
-    background-color: rgb(41, 14, 194);
+    background-color:  rgb(41, 57, 82);
+    
 }
 
 nav{
     grid-area: n;
-    background-color: bisque;
+    background-color: rgb(94, 168, 188) ;
     
 }
 
@@ -66,22 +75,37 @@ article{
     grid-area: a;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: rgb(41, 14, 194);
+    background-color:  rgb(41, 57, 82);
     gap: 10px;
 }
 
 aside{
     grid-area: as;
-    background-color: bisque;
-   
+    background-color: rgb(94, 168, 188);
+    border: 2px solid rgb(94, 168, 188); 
+    border-radius: 10px;
+    padding: 15px;
+    color: #fff;
+}
+
+aside h2 {
+    color: #9dc3e6;
+    text-align: center;
+}
+
+aside p {
+    display: flex;
+    justify-content: space-between; 
+    padding: 5px 0;
+    color: black;
 }
 
 footer{
     grid-area: f;
-    background-color: bisque;
+    background-color: rgb(94, 168, 188);
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:768px){
     nav ul{
         grid-template-columns: 1fr;
     }
@@ -94,28 +118,53 @@ footer{
         "f"
     ;
     }
+    article {
+            grid-template-columns: repeat(2, 1fr); 
+    }
+    nav ul {
+            grid-template-columns: 1fr; 
+    }
+    aside, footer {
+            text-align: center; 
+    } 
 }
 .Tartalom img{
     width: 100%;
-    padding: 5px;
+    padding: 1px;
     border: 1px solid gray;
     border-radius: 15px;
-    background-color: bisque;
+    background-color: rgb(94, 168, 188);
     
 }
 .Tartalom{
-    background-color: bisque;
+    background-color: rgb(94, 168, 188);
     font-size: small;
     border-radius: 15px;
-    border: 1px solid bisque;
+    border: 1px solid rgb(94, 168, 188);
+    padding: 10px;
+    text-align: center;
 }
 
-a{
-    text-decoration: none;
-}
 .Tartalom a{
-    text-align: center;
+   display: block;
+   padding: 5px 10px;
+   text-decoration: none;
+   border: 1px solid rgb(28, 170, 222);
+   border-radius: 15px;
+   margin-top: 5px;
+   text-align: center;
 }
 .Tartalom p{
     text-align: center;
+    margin-bottom: 5px;
 }
+.Tartalom h2{
+    text-align: center;
+}
+
+
+
+
+
+
+
