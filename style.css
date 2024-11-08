@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: cadetblue;
+}
+main {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+article, aside, header, footer, nav {
+    border: 10px solid rgb(41, 14, 194);
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(139, 224, 224);
+}
+
+
+nav ul{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
+    list-style: none;
+}
+
+nav ul li{
+    border: 2px solid bisque;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(233, 215, 116);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+    grid-template-areas: 
+    "h h"
+    "n n"
+    "a as"
+    "f f"
+    ;
+}
+
+header{
+    grid-area: h;
+    background-color: rgb(41, 14, 194);
+}
+
+nav{
+    grid-area: n;
+    background-color: bisque;
+    
+}
+
+article{
+    grid-area: a;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgb(41, 14, 194);
+    gap: 10px;
+}
+
+aside{
+    grid-area: as;
+    background-color: bisque;
+   
+}
+
+footer{
+    grid-area: f;
+    background-color: bisque;
+}
+
+@media screen and (max-width:600px){
+    nav ul{
+        grid-template-columns: 1fr;
+    }
+    main{
+        grid-template-areas: 
+        "h "
+        "n "
+        "as"
+        "a"
+        "f"
+    ;
+    }
+}
+.Tartalom img{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: bisque;
+    
+}
+.Tartalom{
+    background-color: bisque;
+    font-size: small;
+    border-radius: 15px;
+    border: 1px solid bisque;
+}
+
+a{
+    text-decoration: none;
+}
+.Tartalom a{
+    text-align: center;
+}
+.Tartalom p{
+    text-align: center;
+}
